@@ -7,7 +7,7 @@
   <!-- Optional parameters -->
   <!-- Modules to be launched -->
   <arg name="map" default="false" description="launch map"/>
-  <arg name="sensing" default="true" description="launch sensing"/>
+  <arg name="sensing" default="false" description="launch sensing"/>
   <arg name="perception" default="true" description="launch perception"/>
   <!-- Map -->
   <arg name="lanelet2_map_file" default="lanelet2_map.osm" description="lanelet2 map file name"/>
