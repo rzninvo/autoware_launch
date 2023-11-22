@@ -5,6 +5,8 @@
   <arg name="sensor_model" default="" description="sensor model name"/>
 
   <!-- Optional parameters -->
+  <!-- Launch mode -->
+  <arg name="launch_mode" default="digital_twin" description="setting the mode to digital_twin"/>
   <!-- Modules to be launched -->
   <arg name="map" default="false" description="launch map"/>
   <arg name="sensing" default="false" description="launch sensing"/>
@@ -18,6 +20,8 @@
 
   <group scoped="false">
     <include file="$(find-pkg-share autoware_launch)/launch/autoware.launch.xml">
+      <!-- Launch mode -->
+      <arg name="launch_mode" value="$(var launch_mode)"/>
       <!-- Common -->
       <arg name="map_path" value="$(var map_path)"/>
       <arg name="sensor_model" value="$(var sensor_model)"/>

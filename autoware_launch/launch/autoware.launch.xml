@@ -7,6 +7,8 @@
   <arg name="pointcloud_container_name" default="pointcloud_container"/>
 
   <!-- Optional parameters -->
+  <!-- Launch mode -->
+  <arg name="launch_mode" default="autoware" description="autoware/digital_twin"/>
   <!-- Modules to be launched -->
   <arg name="launch_map" default="true" description="launch map"/>
   <arg name="launch_sensing" default="true" description="launch sensing"/>
